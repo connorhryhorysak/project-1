@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image: url(images/mountain.jpg);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    white-space: nowrap;
+    background-color:#FFFEE8;
+    padding: 20px 20px;
+}
+header h1 {
+    display: inline-block;
+    font-size: 62px;
+    font-family: helvetica;
+    text-decoration: underline;
+}
+header nav {
+    display: inline-block;
+}
+header li {
+    display: inline;
+    font-size: 24px;
+    font-family: helvetica;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+header a:hover {
+    text-decoration: underline;
+}
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+.introduction a {
+    font-family: Helvetica;
+    font-style: normal;
+    font-size: 96px;
+    font-weight: 700;
+    transition: all 100ms;
+}
+.introduction a:hover {
+    font-size: 100px;
+}
+
+.introduction {
+    display: flex;
+    width: 863px;
+    height: 345px;
+    color: #1E1E1E;
+    font-family: Helvetica;
+    font-style: normal;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 110px;
+    align-items: center;
+    letter-spacing: -0.05em;
+    padding: 50px 0px 0px 53px;
+
+}
+.introduction img {
+    border-radius: 50px;
+}
+
+.orange {
+    color: #E26F3A;
+}
+.green { 
+    color: #006400
+}
+.info {
+    width: 390px;
+    height: 87px;
+    font-family: 'Helvetica';
+    font-style: bold;
+    font-size: 24px;
+    text-align: right;
+    letter-spacing: -0.03em;
+    color: #1E1E1E;
+    padding: 270px 0px 100px 1015px;
+
+}
+.explore {
+    padding-top: 100px;
+    padding-left: 53px;
+    padding-bottom: 5px;
+    font-family: 'Helvetica';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 33px;
+    letter-spacing: -0.05em;
+    color: #FFFEE8;
+}
+.row {
+    display: flex;
+    padding: 5px 25px 25px 25px;
+}
+.column {
+    flex: 33.33%;
+    padding: 20px;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+.image {
+    border: 3px solid #1E1E1E;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.photo {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.column:hover .image {
+    opacity: 0.6;
+}
+.column:hover .photo {
+    opacity: 1;
+}
+.text {
+    background-color: #E26F3A;
+    border-radius: 50px;
+    color: #FFFEE8;
+    font-family: helvetica;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color:#1E1E1E;
+    padding: 20px 20px;
+}
+ footer nav {
+    color: #FFFEE8;
+}
+footer li {
+    display: inline;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+  /* photography page */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px 20px 20px;
+    background-color:#FFFEE8;
+}
+  
+.table {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 8px;
+}
+.table img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border: 4px solid #1E1E1E;
+}
+
+    /* prints & schoolwork*/
+
+.body {
+    background-color:#FFFEE8;
+    padding: 0 0 20px 20px;
+}
+.print1, .print2 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.print1 p, .print2 p{
+    padding: 0 21% 0 21%;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: start;
+}
+.print1 a {
+    text-decoration: underline;
+    transition: all 100ms;
+}
+.print1 a:hover {
+    color: #E26F3A;
+    font-size: 18px;
+}
+.print1 img, .print2 img {
+    border: 3px solid #1E1E1E;
+}
+
+/* details */
+
+.details {
+    background-image: url(images/Sandwich.jpg);
+    background-position: 75%;
+    padding: 20px 0 20px 20px;
+    display: flex;
+    align-items: center;
+}
+.details img {
+    border: 3px solid #1E1E1E;
+    margin: 20px 0 20px 0;
+}
+.details p {
+    background-color: #1E1E1E;
+    color:#FFFEE8;
+    margin: 0 15% 0 15%;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: start;
+}
+.details a {
+    text-decoration: underline;
+    transition: all 100ms;
+}
+.details a:hover {
+    color: #E26F3A;
+    font-size: 18px;
+}
+
+/* about page */
+
+.middle {
+    display: flex;
+    overflow: auto;
+    padding: 4%;
+}
+.about {
+    display:block;
+}
+.about img {
+    display:block;
+    float:left;
+}
+.about p {
+    display: inline-block;
+    background-color: #1E1E1E;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFEE8;
+    width: 300px;
+    margin: 50px 0 50px 100px;
+}
+.about form {
+    display: inline-block;
+    background-color:#1E1E1E;
+    padding: 20px;
+    margin: 50px 0 50px 100px;
+    width: 300px;
+}
+.about h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFEE8;
+    padding-bottom: 10px;
+}
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFFEE8;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+input[type=submit] {
+    background-color: #006400;
+    color: #FFFEE8;
+    border: none;
+}
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+.about a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;   
+    transition: all 100ms;
+    text-decoration: underline;
+}
+.about a:hover {
+    color: #E26F3A;
+    font-size: 18px;
+}
+
+/* thanks */
+
+.thanks {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-top: 25%;
+    text-align: center;
+}
+.thanks h1 {
+    font-family: Helvetica;
+    font-size: 100px;
+    padding-bottom: 30px;
+}
+.thanks a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;   
+    transition: all 100ms;
+    text-decoration: underline;
+}
+.thanks a:hover {
+    color: #E26F3A;
+    font-size: 28px;
+}
